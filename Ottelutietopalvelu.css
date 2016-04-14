@@ -1,0 +1,151 @@
+﻿body {
+    background-color: white;
+    font-family:'Oxygen', sans-serif;
+}
+
+thead {
+    /*font-size: 2em;*/
+    color: #001b4d;
+    font-size: 20px;
+}
+
+table {
+    align-self: center;
+    width: 600px;
+}
+
+td {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.page-header {
+    color: #ffffff;
+    font-size: 50px;
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    background-color: #00458a;
+    position: fixed;
+    border-bottom: 1px solid #999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.search-table, .match-table { 
+    margin-left: auto; 
+    margin-right: auto;
+    border-spacing: 1em;
+    border-width: 0em;
+}
+
+.search-table {
+    padding-top: 60px;
+}
+
+.search-table-tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.match-list-header {
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #00458a;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.match-list-subheader {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 0.75em;
+    color: #ffffff;
+    background-color: #00458a;
+}
+
+.match-table-dark {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1em;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f2f2f2;
+}
+
+.match-date {
+    width: 600px;
+    color: #00458a;
+    font-weight: bold;
+}
+
+.match-team-header {
+    font-size: 0.75em;
+    width: 300px;
+}
+
+.match-team-info {
+    vertical-align: central;
+    font-size: 1.5em;
+    width: 300px;
+    clear:both;
+}
+
+.match-team-img-left {
+    vertical-align: central;
+    float: left;
+    width: 50px;
+    height: auto;
+}
+
+.match-team-img-right {
+    vertical-align: central;
+    float: right;
+    width: 50px;
+    height: auto;
+}
+
+.spacing {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.ddl {
+    border: 1px solid #999999;
+    padding: 3px;
+    -webkit-appearance: none; 
+    font-size: 0.8em;
+}
+
+select {
+    background-color: #f2f2f2;
+    height: 32px;
+    border: 2px solid #383838;
+    -webkit-appearance: none;
+}
+
+.button {
+    border: 1px solid #999999;
+    background-color: #00458a;
+    color: #ffffff;
+    font-size: 1.0em;
+}
+
+.button-disabled {
+    border: 1px solid #999999;
+    background-color: #808080;
+    color: #000000;
+    font-size: 1.0em;
+}
