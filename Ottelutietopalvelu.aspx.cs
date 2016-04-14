@@ -51,9 +51,6 @@ namespace WebApplication
                     html.Append(match.MatchDate.ToShortDateString());
                     html.Append("</td></tr>");
 
-                    //html.Append("<tr class=\"match-tr\"><td class=\"match-team-header\">Kotijoukkue</td>");
-                    //html.Append("<td class=\"match-team-header\">Vierasjoukkue</td></tr>");
-
                     html.Append(string.Format(
                         "<tr class=\"match-tr\"><td class=\"match-team-info\"><img src=\"{0}\" class=\"match-team-img-left\" />{1} {2}</td>" +
                         "<td class=\"match-team-info\">{4} {5}<img src=\"{3}\" class=\"match-team-img-right\" /></td></tr>",
