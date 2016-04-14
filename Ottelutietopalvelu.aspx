@@ -13,16 +13,16 @@
         <table class="search-table">
             <thead>
                 <tr>
-                    <td colspan="2" class="center">Hae ottelut aikaväliltä</td>
+                    <td colspan="2">Hae ottelut aikaväliltä</td>
                 </tr>
             </thead>
             <tbody class="search-table-tbody">
                 <tr>
-                    <td class="center">Aloituspäivä:</td>
-                    <td class="center">Lopetuspäivä:</td>
+                    <td>Aloituspäivä:</td>
+                    <td>Lopetuspäivä:</td>
                 </tr>
                 <tr>
-                    <td class="center">
+                    <td>
                         <asp:DropDownList ID="ddStartDay" runat="server" Width="50" CssClass="ddl" onchange="checkButtonEnable()">
                         </asp:DropDownList>
                         <asp:DropDownList ID="ddStartMonth" runat="server" Width="50" CssClass="ddl" onchange="setStartTimeDays()">
@@ -30,7 +30,7 @@
                         <asp:DropDownList ID="ddStartYear" runat="server" Width="80" CssClass="ddl" onchange="setStartTimeDays()">
                         </asp:DropDownList>
                     </td>
-                    <td class="center">
+                    <td>
                         <asp:DropDownList ID="ddEndDay" runat="server" Width="50" CssClass="ddl" onchange="checkButtonEnable()">
                         </asp:DropDownList>
                         <asp:DropDownList ID="ddEndMonth" runat="server" Width="50" CssClass="ddl" onchange="setEndTimeDays()">
@@ -40,7 +40,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="center">
+                    <td colspan="2">
                         <asp:Button ID="btnFind" runat="server" Text="Hae »" Width="120" Height="30" CssClass="button" />
                     </td>
                 </tr>
