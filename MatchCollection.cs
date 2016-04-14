@@ -15,8 +15,6 @@ namespace WebApplication
     /// </summary>
     public class MatchCollection
     {
-        const string JSON_DATABASE_FILENAME = @"C:\matches.json";
-
         private MatchCollection() { }
 
         List<Match> Matches;
