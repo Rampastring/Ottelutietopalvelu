@@ -26,7 +26,7 @@ namespace WebApplication
             DateTime startTime = new DateTime(startYear, startMonth, startDay);
             DateTime endTime = new DateTime(endYear, endMonth, endDay, 23, 59, 59);
 
-            List<Match> matches = MatchCollection.Instance().GetMatches(startTime, endTime);
+            List<Match> matches = MatchCollection.Instance.GetMatches(startTime, endTime);
 
             matchList.InnerHtml = String.Empty;
 
@@ -76,8 +76,8 @@ namespace WebApplication
         /// </summary>
         protected void Page_Init(object sender, EventArgs e)
         {
-            DateTime firstMatchTime = MatchCollection.Instance().GetTimeOfFirstMatch();
-            DateTime lastMatchTime = MatchCollection.Instance().GetTimeOfLastMatch();
+            DateTime firstMatchTime = MatchCollection.Instance.GetTimeOfFirstMatch();
+            DateTime lastMatchTime = MatchCollection.Instance.GetTimeOfLastMatch();
 
             for (int i = firstMatchTime.Year; i <= lastMatchTime.Year; i++)
             {

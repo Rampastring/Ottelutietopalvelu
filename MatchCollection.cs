@@ -1,5 +1,5 @@
 ﻿// @author Rami Pasanen
-// @version 14.04.2016
+// @version 18.04.2016
 
 using System;
 using System.Collections.Generic;
@@ -24,16 +24,18 @@ namespace WebApplication
         /// <summary>
         /// Palauttaa instanssin tästä luokasta (singleton).
         /// </summary>
-        /// <returns>Tämän luokan instanssin.</returns>
-        public static MatchCollection Instance()
+        public static MatchCollection Instance
         {
-            if (_instance == null)
+            get
             {
-                _instance = new MatchCollection();
-                _instance.LoadMatches();
-            }
+                if (_instance == null)
+                {
+                    _instance = new MatchCollection();
+                    _instance.LoadMatches();
+                }
 
-            return _instance;
+                return _instance;
+            }
         }
 
         /// <summary>
@@ -54,6 +56,9 @@ namespace WebApplication
         /// <returns>Listan otteluista määritellyltä aikaväliltä.</returns>
         public List<Match> GetMatches(DateTime startTime, DateTime endTime)
         {
+            // MSDN-dokumentaation mukaan listoja voi turvallisesti lukea samanaikaisesti
+            // usealla säikeellä, kunhan listaa ei muokata - joten tätä ei tarvitse lukita
+
             return Matches.FindAll(m => m.MatchDate >= startTime && m.MatchDate <= endTime);
         }
 
